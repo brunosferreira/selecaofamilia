@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "t3FVa0FPWBP18HdGnWmMJPX7m4oD0yRybjMJxm4R1WyrK4FRwYSBgkU6Ztj1t409LfBeYoBplut69Qa18yz7DQ==",
+  "success": true,
+  "projectFilePath": "D:\\Bruno\\estudo\\MentoriaSelecaoFamilia\\SelecaoFamilia\\SelecaoFamilia.App\\App\\SelecaoFamilia.App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\brunoferreira\\.nuget\\packages\\bogus\\31.0.3\\bogus.31.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

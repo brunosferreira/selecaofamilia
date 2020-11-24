@@ -1,0 +1,52 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SelecaoFamlia.App/1.0.0": {
+        "dependencies": {
+          "Bogus": "31.0.3",
+          "SelecaoFamilia.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "SelecaoFamlia.App.dll": {}
+        }
+      },
+      "Bogus/31.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Bogus.dll": {
+            "assemblyVersion": "31.0.3.0",
+            "fileVersion": "31.0.3.0"
+          }
+        }
+      },
+      "SelecaoFamilia.Dominio/1.0.0": {
+        "runtime": {
+          "SelecaoFamilia.Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SelecaoFamlia.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Bogus/31.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CMVbZndfEihsd7A5GgdfMQTNiUzjTTng2IPoTe4J2cyxUaEqCW5M5HO8uGF/Qkq1NL219AbLHX+4dx9MxWDSiA==",
+      "path": "bogus/31.0.3",
+      "hashPath": "bogus.31.0.3.nupkg.sha512"
+    },
+    "SelecaoFamilia.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

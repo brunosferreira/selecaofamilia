@@ -1,0 +1,17 @@
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\bin\Debug\netcoreapp3.1\SelecaoFamilia.App.exe
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\bin\Debug\netcoreapp3.1\SelecaoFamilia.App.deps.json
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\bin\Debug\netcoreapp3.1\SelecaoFamilia.App.runtimeconfig.json
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\bin\Debug\netcoreapp3.1\SelecaoFamilia.App.runtimeconfig.dev.json
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\bin\Debug\netcoreapp3.1\SelecaoFamilia.App.dll
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\bin\Debug\netcoreapp3.1\SelecaoFamilia.App.pdb
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\bin\Debug\netcoreapp3.1\Bogus.dll
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\bin\Debug\netcoreapp3.1\SelecaoFamilia.Dominio.dll
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\bin\Debug\netcoreapp3.1\SelecaoFamilia.Dominio.pdb
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\obj\Debug\netcoreapp3.1\SelecaoFamilia.App.csprojAssemblyReference.cache
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\obj\Debug\netcoreapp3.1\SelecaoFamilia.App.AssemblyInfoInputs.cache
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\obj\Debug\netcoreapp3.1\SelecaoFamilia.App.AssemblyInfo.cs
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\obj\Debug\netcoreapp3.1\SelecaoFamilia.App.csproj.CoreCompileInputs.cache
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\obj\Debug\netcoreapp3.1\SelecaoFamilia.App.csproj.CopyComplete
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\obj\Debug\netcoreapp3.1\SelecaoFamilia.App.dll
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\obj\Debug\netcoreapp3.1\SelecaoFamilia.App.pdb
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.App\App\obj\Debug\netcoreapp3.1\SelecaoFamilia.App.genruntimeconfig.cache
