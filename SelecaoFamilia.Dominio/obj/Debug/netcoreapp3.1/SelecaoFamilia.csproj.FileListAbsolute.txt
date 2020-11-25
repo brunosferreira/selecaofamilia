@@ -1,0 +1,9 @@
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia\bin\Debug\netcoreapp3.1\SelecaoFamilia.deps.json
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia\bin\Debug\netcoreapp3.1\SelecaoFamilia.dll
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia\bin\Debug\netcoreapp3.1\SelecaoFamilia.pdb
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia\obj\Debug\netcoreapp3.1\SelecaoFamilia.csprojAssemblyReference.cache
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia\obj\Debug\netcoreapp3.1\SelecaoFamilia.AssemblyInfoInputs.cache
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia\obj\Debug\netcoreapp3.1\SelecaoFamilia.AssemblyInfo.cs
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia\obj\Debug\netcoreapp3.1\SelecaoFamilia.csproj.CoreCompileInputs.cache
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia\obj\Debug\netcoreapp3.1\SelecaoFamilia.dll
+D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia\obj\Debug\netcoreapp3.1\SelecaoFamilia.pdb

@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SelecaoFamilia\SelecaoFamilia.Dominio.csproj" />
+    <ProjectReference Include="..\SelecaoFamilia.Dominio\SelecaoFamilia.Dominio.csproj" />
   </ItemGroup>
 
 </Project>

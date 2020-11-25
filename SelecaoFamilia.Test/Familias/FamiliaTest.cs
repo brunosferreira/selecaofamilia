@@ -54,7 +54,7 @@ namespace SelecaoFamilia.Test.Familias
 
             var familia = FamiliaBuilder.Novo().Build();
 
-            Assert.Equal(criteriosAtendidosEsperado, familia.Pontuacao);
+            Assert.Equal(criteriosAtendidosEsperado, familia.CriteriosAtendidos);
         }
 
         [Theory]
