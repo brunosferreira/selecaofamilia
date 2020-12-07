@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SelecaoFamilia.Dominio.Familias;
+using SelecaoFamilia.Dominio.Familias.Pessoas;
 
-namespace SelecaoFamilia.Dominio.Familias
+namespace SelecaoFamilia.Dominio.CalculadoraDePontuacoes
 {
-    class CalculaPontuacaoDependentes : ICalculaPontuacao
+    class CalculaPontuacaoPorDependentes : ICalculaPontuacao
     {
         public int CalcularPontuacao(Familia familia)
         {
@@ -12,7 +11,7 @@ namespace SelecaoFamilia.Dominio.Familias
 
             foreach(var pessoa in familia.Pessoas)
             {
-                if (pessoa.TipoPessoa == Pessoas.TipoPessoa.Dependente && pessoa.Idade < 18)
+                if (pessoa.TipoPessoa.Equals(TipoPessoa.Dependente) && pessoa.Idade < 18)
                     dependentes++;
             }
             

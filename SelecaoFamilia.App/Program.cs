@@ -14,12 +14,12 @@ namespace App
             var Contemplados = new List<Contemplado>();
 
             Contemplados = GerarDadosFake();
-            Contemplados.Sort((x, y) => y.Familia.Pontuacao.CompareTo(x.Familia.Pontuacao));
+            Contemplados.Sort((x, y) => y.PontuacaoFamilia.Pontuacao.CompareTo(x.PontuacaoFamilia.Pontuacao));
 
             foreach (var contemplado in Contemplados)
             {
-                Console.WriteLine($"familia: {contemplado.Familia.Id}, pontuação: {contemplado.Familia.Pontuacao}");
-                foreach (var pessoa in contemplado.Familia.Pessoas)
+                Console.WriteLine($"familia: {contemplado.PontuacaoFamilia.Familia.Id}, pontuação: {contemplado.PontuacaoFamilia.Pontuacao}");
+                foreach (var pessoa in contemplado.PontuacaoFamilia.Familia.Pessoas)
                 {
                     Console.WriteLine($"pessoa: {pessoa.Nome}");
                 }
@@ -42,8 +42,6 @@ namespace App
                 {
                     familia.AdicionarPessoa(PessoaFaker.Novo().ComTipoPessoa(TipoPessoa.Dependente).Build());
                 }
-
-                familia.CalcularPontuacao();
 
                 Contemplados.Add(new Contemplado(familia));
             }

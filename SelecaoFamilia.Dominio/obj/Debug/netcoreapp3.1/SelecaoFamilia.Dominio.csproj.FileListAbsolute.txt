@@ -10,7 +10,6 @@ D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia\obj\Debug\n
 D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.Dominio\bin\Debug\netcoreapp3.1\SelecaoFamilia.Dominio.deps.json
 D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.Dominio\bin\Debug\netcoreapp3.1\SelecaoFamilia.Dominio.dll
 D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.Dominio\bin\Debug\netcoreapp3.1\SelecaoFamilia.Dominio.pdb
-D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.Dominio\obj\Debug\netcoreapp3.1\SelecaoFamilia.Dominio.csprojAssemblyReference.cache
 D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.Dominio\obj\Debug\netcoreapp3.1\SelecaoFamilia.Dominio.AssemblyInfoInputs.cache
 D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.Dominio\obj\Debug\netcoreapp3.1\SelecaoFamilia.Dominio.AssemblyInfo.cs
 D:\Bruno\estudo\MentoriaSelecaoFamilia\SelecaoFamilia\SelecaoFamilia.Dominio\obj\Debug\netcoreapp3.1\SelecaoFamilia.Dominio.csproj.CoreCompileInputs.cache

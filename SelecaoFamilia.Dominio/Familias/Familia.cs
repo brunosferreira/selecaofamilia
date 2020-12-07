@@ -10,8 +10,6 @@ namespace SelecaoFamilia.Dominio.Familias
         public List<Pessoa> Pessoas { get; private set; }
         public StatusFamilia Status { get; private set; }
         public Pessoa Pretendente => Pessoas[0];
-        public int Pontuacao { get; private set; }
-        public int CriteriosAtendidos { get; private set; }
 
         public Familia(Guid id, Pessoa pretendente, StatusFamilia statusFamilia)
         {
@@ -26,9 +24,8 @@ namespace SelecaoFamilia.Dominio.Familias
             {
                 pretendente
             };
+
             Status = statusFamilia;
-            Pontuacao = 0;
-            CriteriosAtendidos = 0;
         }
 
         public void AdicionarPessoa(Pessoa pessoa)
@@ -43,29 +40,6 @@ namespace SelecaoFamilia.Dominio.Familias
         {
             if (Id == null || Pessoas.Count == 0)
                 Status = StatusFamilia.CadastroIncompleto;
-            //inserir os demais casos de validação JaSelecionadaEmOutroCadastro e JaPossuiCasa
-        }
-
-        public void CalcularPontuacao()
-        {
-            CalculadoraDePontuacao cpIdade = new CalculadoraDePontuacao(new CalculaPontuacaoIdade());
-            CalculadoraDePontuacao cpRenda = new CalculadoraDePontuacao(new CalculaPontuacaoRenda());
-            CalculadoraDePontuacao cpDependentes = new CalculadoraDePontuacao(new CalculaPontuacaoDependentes());
-
-            int ptIdade = cpIdade.Calcular(this);
-            int ptRenda = cpRenda.Calcular(this);
-            int ptDependentes = cpDependentes.Calcular(this);
-
-            if(ptIdade > 0)
-                CriteriosAtendidos++;
-
-            if (ptRenda > 0)
-                CriteriosAtendidos++;
-
-            if (ptDependentes > 0)
-                CriteriosAtendidos++;
-
-            Pontuacao = ptIdade + ptRenda + ptDependentes;
         }
     }
 }

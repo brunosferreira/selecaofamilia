@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SelecaoFamilia.Dominio.Familias;
 
-namespace SelecaoFamilia.Dominio.Familias
+namespace SelecaoFamilia.Dominio.CalculadoraDePontuacoes
 {
-    public class CalculaPontuacaoIdade : ICalculaPontuacao
+    public class CalculaPontuacaoPorIdade : ICalculaPontuacao
     {
         public int CalcularPontuacao(Familia familia)
         {

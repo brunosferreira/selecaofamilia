@@ -11,11 +11,11 @@ namespace SelecaoFamilia.Test.Familias.Contemplados
         [Fact]
         public void DeveCriarUmContemplado()
         {
-            var familia = FamiliaBuilder.Novo().Build();
+            var familiaEsperada = FamiliaBuilder.Novo().Build();
             
-            var Contemplado = new Contemplado(familia);
+            var Contemplado = new Contemplado(familiaEsperada);
 
-            Assert.Equal(Contemplado.Familia, familia);
+            Assert.Equal(familiaEsperada, Contemplado.PontuacaoFamilia.Familia);
         }
 
         [Fact]
