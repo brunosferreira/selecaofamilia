@@ -2,43 +2,44 @@
 
 namespace SelecaoFamilia.Dominio.CalculadoraDePontuacoes
 {
-    public class PontuacaoFamilia
+    public class CalcadoraDeCriteriosDaFamilia
     {
         private readonly ICalculaPontuacao CalculaPontuacaoPorIdade;
         private readonly ICalculaPontuacao CalculaPontuacaoPorRenda;
         private readonly ICalculaPontuacao CalculaPontuacaoPorDependentes;
+        private readonly PontuacaoDaFamiliaDTO PontuacaoDaFamiliaDTO;
 
         public Familia Familia {get; private set;}
-        public int Pontuacao { get; private set; }
-        public int CriteriosAtendidos { get; private set; }
 
-        public PontuacaoFamilia(Familia familia)
+        public CalcadoraDeCriteriosDaFamilia(Familia familia)
         {
             CalculaPontuacaoPorIdade = new CalculaPontuacaoPorIdade();
             CalculaPontuacaoPorRenda = new CalculaPontuacaoPorRenda();
             CalculaPontuacaoPorDependentes = new CalculaPontuacaoPorDependentes();
+            PontuacaoDaFamiliaDTO = new PontuacaoDaFamiliaDTO();
             Familia = familia;
-            Calcular();
         }
 
-        public void Calcular()
+        public PontuacaoDaFamiliaDTO Calcular()
         {
             int pontuacaoPorIdade = CalcularPorIdade();
             int pontuacaoPorRenda = CalcularPorRenda();
             int pontuacaoPorDependentes = CalcularPorDependente();
 
-            CriteriosAtendidos = 0;
+            PontuacaoDaFamiliaDTO.CriteriosAtendidos = 0;
 
             if (pontuacaoPorIdade > 0)
-                CriteriosAtendidos++;
+                PontuacaoDaFamiliaDTO.CriteriosAtendidos++;
 
             if (pontuacaoPorRenda > 0)
-                CriteriosAtendidos++;
+                PontuacaoDaFamiliaDTO.CriteriosAtendidos++;
 
             if (pontuacaoPorDependentes > 0)
-                CriteriosAtendidos++;
+                PontuacaoDaFamiliaDTO.CriteriosAtendidos++;
 
-            Pontuacao = pontuacaoPorIdade + pontuacaoPorRenda + pontuacaoPorDependentes;
+            PontuacaoDaFamiliaDTO.Pontuacao = pontuacaoPorIdade + pontuacaoPorRenda + pontuacaoPorDependentes;
+
+            return PontuacaoDaFamiliaDTO;
         }
 
         public int CalcularPorIdade()

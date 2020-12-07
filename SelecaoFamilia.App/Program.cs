@@ -11,10 +11,11 @@ namespace App
     {
         public static void Main(string[] args)
         {
+            /*
             var Contemplados = new List<Contemplado>();
 
             Contemplados = GerarDadosFake();
-            Contemplados.Sort((x, y) => y.PontuacaoFamilia.Pontuacao.CompareTo(x.PontuacaoFamilia.Pontuacao));
+            Contemplados.Sort((x, y) => y. PontuacaoFamilia..Pontuacao.CompareTo(x.PontuacaoFamilia.Pontuacao));
 
             foreach (var contemplado in Contemplados)
             {
@@ -25,6 +26,7 @@ namespace App
                 }
                 Console.WriteLine();
             }
+            */
         }
 
         private static List<Contemplado> GerarDadosFake()

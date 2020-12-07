@@ -2,7 +2,7 @@
 
 namespace SelecaoFamilia.Dominio.CalculadoraDePontuacoes
 {
-    class CalculaPontuacaoPorRenda : ICalculaPontuacao
+    public class CalculaPontuacaoPorRenda : ICalculaPontuacao
     {
         public int CalcularPontuacao(Familia familia)
         {

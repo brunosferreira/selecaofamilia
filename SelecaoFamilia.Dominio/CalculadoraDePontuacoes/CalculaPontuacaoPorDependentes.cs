@@ -3,7 +3,7 @@ using SelecaoFamilia.Dominio.Familias.Pessoas;
 
 namespace SelecaoFamilia.Dominio.CalculadoraDePontuacoes
 {
-    class CalculaPontuacaoPorDependentes : ICalculaPontuacao
+    public class CalculaPontuacaoPorDependentes : ICalculaPontuacao
     {
         public int CalcularPontuacao(Familia familia)
         {
