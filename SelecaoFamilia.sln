@@ -10,8 +10,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelecaoFamilia.Test", "Sele
 		{D257B05A-9EE6-4C8B-8C3D-66C4D5BDE041} = {D257B05A-9EE6-4C8B-8C3D-66C4D5BDE041}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelecaoFamilia.App", "SelecaoFamilia.App\SelecaoFamilia.App.csproj", "{276943F9-90C7-493C-9887-16EAD2DF74F6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,10 +24,6 @@ Global
 		{10CCE34A-2F9E-4C65-8D07-A29E7C357DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10CCE34A-2F9E-4C65-8D07-A29E7C357DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10CCE34A-2F9E-4C65-8D07-A29E7C357DF9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{276943F9-90C7-493C-9887-16EAD2DF74F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{276943F9-90C7-493C-9887-16EAD2DF74F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{276943F9-90C7-493C-9887-16EAD2DF74F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{276943F9-90C7-493C-9887-16EAD2DF74F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
