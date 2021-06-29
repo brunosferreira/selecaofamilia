@@ -1,23 +1,26 @@
-﻿using SelecaoFamilia.Dominio.Familias;
+﻿using SelecaoFamilia.Dominio.CalculadoraDePontuacoes.PorRenda;
+using SelecaoFamilia.Dominio.Familias;
 
 namespace SelecaoFamilia.Dominio.CalculadoraDePontuacoes
 {
-    public class CalculaPontuacaoPorRenda : ICalculaPontuacao
+    public class CalculaPontuacaoPorRenda : ICalculaPontuacaoPorIdade
     {
+        private readonly CalculaPontuacaoPorRendaMaiorQueMilEQuinhentosEMenorQueDoisMil _calculaPontuacaoPorRendaMaiorQueMilEQuinhentosEMenosQueDoisMil;
+        private readonly CalculaPontuacaoPorRendaMaiorQueNovecentosEMenorQueMilEQuinhentos _calculaPontuacaoPorRendaMaiorQueNovecentosEMenorQueMilEQuinhentos;
+        private readonly CalculaPontuacaoPorRendaAteNovecentos _calculaPontuacaoPorRendaAteNovecentos;
+
+        public CalculaPontuacaoPorRenda()
+        {
+            _calculaPontuacaoPorRendaMaiorQueMilEQuinhentosEMenosQueDoisMil = new CalculaPontuacaoPorRendaMaiorQueMilEQuinhentosEMenorQueDoisMil();
+            _calculaPontuacaoPorRendaMaiorQueNovecentosEMenorQueMilEQuinhentos = new CalculaPontuacaoPorRendaMaiorQueNovecentosEMenorQueMilEQuinhentos();
+            _calculaPontuacaoPorRendaAteNovecentos = new CalculaPontuacaoPorRendaAteNovecentos();
+        }
+
         public int CalcularPontuacao(Familia familia)
         {
-            decimal renda = 0;
-
-            foreach(var pessoa in familia.Pessoas)
-                renda += pessoa.Renda;
-            
-            switch(renda)
-            {
-                case decimal n when n <= 900.00M : return 5;
-                case decimal n when n >= 900.01M && n <= 1500.00M : return 3;
-                case decimal n when n >= 1500.01M && n <= 2000.00M : return 1;
-                default: return 0;
-            }
+            return _calculaPontuacaoPorRendaAteNovecentos.CalculaPontuacao(familia) +
+                _calculaPontuacaoPorRendaMaiorQueMilEQuinhentosEMenosQueDoisMil.CalculaPontuacao(familia) +
+                _calculaPontuacaoPorRendaMaiorQueNovecentosEMenorQueMilEQuinhentos.CalculaPontuacao(familia);
         }
     }
 }

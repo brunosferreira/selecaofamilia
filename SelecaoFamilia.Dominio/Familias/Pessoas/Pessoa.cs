@@ -11,7 +11,7 @@ namespace SelecaoFamilia.Dominio.Familias.Pessoas
         public decimal Renda { get; private set; }
         public StatusPessoa Status { get; private set; }
         public DateTime DataDeAtivacao { get; private set; }
-        public int Idade => DateTime.Now.Year < DataDeNascimento.Year ? DateTime.Now.Year - DataDeNascimento.Year : (DateTime.Now.Year - DataDeNascimento.Year) - 1;
+        public int Idade => ObterIdade();
 
         public Pessoa(Guid id, string nome, TipoPessoa tipoPessoa, DateTime dataDeNascimento, decimal renda)
         {
@@ -41,6 +41,13 @@ namespace SelecaoFamilia.Dominio.Familias.Pessoas
         {
             Status = StatusPessoa.Ativo;
             DataDeAtivacao = DateTime.Now;
+        }
+
+        private int ObterIdade()
+        {
+            return DateTime.Now.Year < DataDeNascimento.Year
+                ? DateTime.Now.Year - DataDeNascimento.Year
+                : (DateTime.Now.Year - DataDeNascimento.Year) - 1;
         }
     }
 }

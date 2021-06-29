@@ -19,7 +19,7 @@ namespace SelecaoFamilia.Test.CalculadoraDePontuacoes
                 var dependente = PessoaBuilder.Novo().ComTipoPessoa(TipoPessoa.Dependente).ComMenorDeIdade().ComRenda(0.00M).Build();
                 familia.AdicionarPessoa(dependente);
             }
-            var calcadoraDeCriteriosDaFamilia = new CalcadoraDeCriteriosDaFamilia(familia);
+            var calcadoraDeCriteriosDaFamilia = new CalculadoraDeCriteriosDaFamilia(familia);
 
             var pontuacaoDaFamiliaDTO = calcadoraDeCriteriosDaFamilia.Calcular();
 

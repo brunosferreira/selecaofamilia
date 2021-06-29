@@ -1,22 +1,26 @@
-﻿using SelecaoFamilia.Dominio.Familias;
+﻿using SelecaoFamilia.Dominio.CalculadoraDePontuacoes.PorIdade;
+using SelecaoFamilia.Dominio.Familias;
 
 namespace SelecaoFamilia.Dominio.CalculadoraDePontuacoes
 {
-    public class CalculaPontuacaoPorIdade : ICalculaPontuacao
+    public class CalculaPontuacaoPorIdade : ICalculaPontuacaoPorIdade
     {
+        private readonly CalculaPontuacaoPorIdadeEntreTrintaEQuarentaEQuatroAnos _calculaPontuacaoPorIdadeEntreTrintaEQuarentaEQuatroAnos;
+        private readonly CalculaPontuacaoPorIdadeMenorQueTrintaAnos _calculaPontuacaoPorIdadeMenorQueTrintaAnos;
+        private readonly CalculaPontuacaoPorIdadeQuarentaECincoAnosOuMais _calculaPontuacaoPorIdadeQuarentaECincoAnosOuMais;
+
+        public CalculaPontuacaoPorIdade()
+        {
+            _calculaPontuacaoPorIdadeEntreTrintaEQuarentaEQuatroAnos = new CalculaPontuacaoPorIdadeEntreTrintaEQuarentaEQuatroAnos();
+            _calculaPontuacaoPorIdadeMenorQueTrintaAnos = new CalculaPontuacaoPorIdadeMenorQueTrintaAnos();
+            _calculaPontuacaoPorIdadeQuarentaECincoAnosOuMais = new CalculaPontuacaoPorIdadeQuarentaECincoAnosOuMais();
+        }
+
         public int CalcularPontuacao(Familia familia)
         {
-            var pretendente = familia.Pretendente;
-
-            switch (pretendente.Idade)
-            {
-                case int n when (n < 30):
-                    return 1;
-                case int n when (n >= 30 && n <= 44):                
-                    return 2;
-                default:
-                    return 3;
-            }
+            return _calculaPontuacaoPorIdadeEntreTrintaEQuarentaEQuatroAnos.CalculaPontuacao(familia) +
+                _calculaPontuacaoPorIdadeMenorQueTrintaAnos.CalculaPontuacao(familia) +
+                _calculaPontuacaoPorIdadeQuarentaECincoAnosOuMais.CalculaPontuacao(familia);
         }
     }
 }

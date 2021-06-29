@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bruno\\estudo\\MentoriaSelecaoFamilia\\SelecaoFamilia\\SelecaoFamilia.Dominio\\SelecaoFamilia.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\brunoferreira\\Documents\\Estudo\\MentoriaSelecaoFamilia\\SelecaoFamilia\\SelecaoFamilia.Dominio\\SelecaoFamilia.Dominio.csproj",
       "projectName": "SelecaoFamilia.Dominio",
-      "projectPath": "D:\\Bruno\\estudo\\MentoriaSelecaoFamilia\\SelecaoFamilia\\SelecaoFamilia.Dominio\\SelecaoFamilia.Dominio.csproj",
+      "projectPath": "C:\\Users\\brunoferreira\\Documents\\Estudo\\MentoriaSelecaoFamilia\\SelecaoFamilia\\SelecaoFamilia.Dominio\\SelecaoFamilia.Dominio.csproj",
       "packagesPath": "C:\\Users\\brunoferreira\\.nuget\\packages\\",
-      "outputPath": "D:\\Bruno\\estudo\\MentoriaSelecaoFamilia\\SelecaoFamilia\\SelecaoFamilia.Dominio\\obj\\",
+      "outputPath": "C:\\Users\\brunoferreira\\Documents\\Estudo\\MentoriaSelecaoFamilia\\SelecaoFamilia\\SelecaoFamilia.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\brunoferreira\\AppData\\Roaming\\NuGet\\NuGet.Config",

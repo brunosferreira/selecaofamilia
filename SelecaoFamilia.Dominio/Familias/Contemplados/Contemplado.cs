@@ -7,7 +7,7 @@ namespace SelecaoFamilia.Dominio.Familias.Contemplados
     {
         public Guid Id { get; private set; }
         public DateTime Data { get; private set; }
-        public CalcadoraDeCriteriosDaFamilia PontuacaoFamilia { get; private set; }
+        public CalculadoraDeCriteriosDaFamilia PontuacaoFamilia { get; private set; }
 
         public Contemplado(Familia familia)
         {
@@ -20,7 +20,7 @@ namespace SelecaoFamilia.Dominio.Familias.Contemplados
             Id = Guid.NewGuid();
             Data = DateTime.Today;
 
-            PontuacaoFamilia = new CalcadoraDeCriteriosDaFamilia(familia);
+            PontuacaoFamilia = new CalculadoraDeCriteriosDaFamilia(familia);
         }
     }
 }
