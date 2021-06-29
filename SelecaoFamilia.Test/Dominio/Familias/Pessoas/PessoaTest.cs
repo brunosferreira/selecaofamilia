@@ -13,7 +13,7 @@ namespace SelecaoFamilia.Test.Familias.Pessoas
         {
             var pessoaEsperada = PessoaBuilder.Novo().Build();
 
-            var pessoa = new Pessoa(pessoaEsperada.Id, pessoaEsperada.Nome, pessoaEsperada.TipoPessoa, pessoaEsperada.DataDeNascimento, pessoaEsperada.Renda);
+            var pessoa = new Pessoa(pessoaEsperada.Nome, pessoaEsperada.TipoPessoa, pessoaEsperada.DataDeNascimento, pessoaEsperada.Renda);
 
             pessoaEsperada.ToExpectedObject().ShouldMatch(pessoa);
         }

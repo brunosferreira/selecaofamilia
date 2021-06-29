@@ -1,10 +1,10 @@
-﻿using System;
+﻿using SelecaoFamilia.Dominio._Base;
+using System;
 
 namespace SelecaoFamilia.Dominio.Familias.Pessoas
 {
-    public class Pessoa
+    public class Pessoa : Entidade
     {
-        public Guid Id { get; private set; }
         public string Nome { get; private set; }
         public TipoPessoa TipoPessoa { get; private set; }
         public DateTime DataDeNascimento { get; private set; }
@@ -13,7 +13,7 @@ namespace SelecaoFamilia.Dominio.Familias.Pessoas
         public DateTime DataDeAtivacao { get; private set; }
         public int Idade => ObterIdade();
 
-        public Pessoa(Guid id, string nome, TipoPessoa tipoPessoa, DateTime dataDeNascimento, decimal renda)
+        public Pessoa(string nome, TipoPessoa tipoPessoa, DateTime dataDeNascimento, decimal renda)
         {
             if (string.IsNullOrEmpty(nome))
                 throw new ArgumentException("Nome inválido");
@@ -24,7 +24,6 @@ namespace SelecaoFamilia.Dominio.Familias.Pessoas
             if (renda < 0)
                 throw new ArgumentException("Renda inválida");
 
-            Id = id;
             Nome = nome;
             TipoPessoa = tipoPessoa;
             DataDeNascimento = dataDeNascimento;

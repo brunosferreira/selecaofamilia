@@ -1,9 +1,9 @@
-﻿using SelecaoFamilia.Dominio.CalculadoraDePontuacoes;
+﻿using SelecaoFamilia.Aplicacao.CalculadoraDePontuacoes;
 using SelecaoFamilia.Dominio.Familias.Pessoas;
 using SelecaoFamilia.Test._Builders;
 using Xunit;
 
-namespace SelecaoFamilia.Test.CalculadoraDePontuacoes
+namespace SelecaoFamilia.Test.Aplicacao.CalculadoraDePontuacoes
 {
     public class CalculaPontuacaoPorRendaTest
     {

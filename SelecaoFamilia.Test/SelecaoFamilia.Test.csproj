@@ -9,6 +9,7 @@
     <PackageReference Include="Bogus" Version="31.0.3" />
     <PackageReference Include="ExpectedObjects" Version="2.3.6" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.0" />
+    <PackageReference Include="Moq" Version="4.16.1" />
     <PackageReference Include="xunit.assert" Version="2.4.1" />
     <PackageReference Include="xunit.core" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
@@ -18,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SelecaoFamilia.Aplicacao\SelecaoFamilia.Aplicacao.csproj" />
     <ProjectReference Include="..\SelecaoFamilia.Dominio\SelecaoFamilia.Dominio.csproj" />
   </ItemGroup>
 

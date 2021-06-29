@@ -1,10 +1,9 @@
-﻿using SelecaoFamilia.Dominio.CalculadoraDePontuacoes;
-using SelecaoFamilia.Dominio.Familias.Pessoas;
+﻿using SelecaoFamilia.Aplicacao.CalculadoraDePontuacoes;
 using SelecaoFamilia.Test._Builders;
 using System;
 using Xunit;
 
-namespace SelecaoFamilia.Test.CalculadoraDePontuacoes
+namespace SelecaoFamilia.Test.Aplicacao.CalculadoraDePontuacoes
 {
     public class CalculaPontuacaoPorIdadeTest
     {

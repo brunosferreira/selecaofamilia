@@ -14,7 +14,7 @@ namespace SelecaoFamilia.Test.Familias
         {
             var familiaEsperada = FamiliaBuilder.Novo().Build();
 
-            var familia = new Familia(familiaEsperada.Id, familiaEsperada.Pretendente, familiaEsperada.Status);
+            var familia = new Familia(familiaEsperada.Pretendente, familiaEsperada.Status);
 
             familiaEsperada.ToExpectedObject().ShouldMatch(familia);
         }

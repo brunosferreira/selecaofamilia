@@ -8,7 +8,6 @@ namespace SelecaoFamilia.Test._Builders
     {
         private static Faker faker = new Faker("pt_BR");
         
-        private Guid id = Guid.NewGuid();
         private string nome = faker.Person.FullName;
         private TipoPessoa tipoPessoa = TipoPessoa.Pretendente;
         private DateTime dataDeNascimento = faker.Person.DateOfBirth;
@@ -21,7 +20,7 @@ namespace SelecaoFamilia.Test._Builders
 
         public Pessoa Build()
         {
-            return new Pessoa(id, nome, tipoPessoa, dataDeNascimento, renda);
+            return new Pessoa(nome, tipoPessoa, dataDeNascimento, renda);
         }
 
         public PessoaBuilder ComTipoPessoa(TipoPessoa tipoPessoa)

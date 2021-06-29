@@ -1,10 +1,10 @@
-﻿using SelecaoFamilia.Dominio.CalculadoraDePontuacoes;
+﻿using SelecaoFamilia.Aplicacao.CalculadoraDePontuacoes;
 using SelecaoFamilia.Dominio.Familias.Pessoas;
 using SelecaoFamilia.Test._Builders;
 using System;
 using Xunit;
 
-namespace SelecaoFamilia.Test.CalculadoraDePontuacoes
+namespace SelecaoFamilia.Test.Aplicacao.CalculadoraDePontuacoes
 {
     public class CalculadoraDeCriteriosDaFamiliaTest
     {
@@ -19,9 +19,9 @@ namespace SelecaoFamilia.Test.CalculadoraDePontuacoes
                 var dependente = PessoaBuilder.Novo().ComTipoPessoa(TipoPessoa.Dependente).ComMenorDeIdade().ComRenda(0.00M).Build();
                 familia.AdicionarPessoa(dependente);
             }
-            var calcadoraDeCriteriosDaFamilia = new CalculadoraDeCriteriosDaFamilia(familia);
+            var calcadoraDeCriteriosDaFamilia = new CalculadoraDePontuacao();
 
-            var pontuacaoDaFamiliaDTO = calcadoraDeCriteriosDaFamilia.Calcular();
+            var pontuacaoDaFamiliaDTO = calcadoraDeCriteriosDaFamilia.Calcula(familia);
 
             Assert.Equal(pontuacaoEsperada, pontuacaoDaFamiliaDTO.Pontuacao);
         }

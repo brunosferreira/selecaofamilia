@@ -6,7 +6,6 @@ namespace SelecaoFamilia.Test._Builders
 {
     public class FamiliaBuilder
     {
-        private Guid Id = Guid.NewGuid();
         private Pessoa Pessoa = PessoaBuilder.Novo().Build();
         private StatusFamilia StatusFamilia = StatusFamilia.CadastroValido;
 
@@ -17,7 +16,7 @@ namespace SelecaoFamilia.Test._Builders
 
         public Familia Build()
         {
-            return new Familia(Id, Pessoa, StatusFamilia);
+            return new Familia(Pessoa, StatusFamilia);
         }
 
         public FamiliaBuilder ComStatus(StatusFamilia statusFamilia)
